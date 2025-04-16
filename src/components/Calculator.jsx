@@ -11,23 +11,12 @@ function CreateCalculator() {
 		['⁺⁄₋', '0', '.', '='],
 	];
 
-	/**
-	 * As we are setting the buttonValues to their classname
-	 * I want a helper function to get the classname for each button
-	 * to make it easier to style them in the CSS file.
-	 */
+	// Going to style numbers and equals differently to the operations
 	const getButtonClass = (button) => {
 		//Numbers
-		if (!isNaN(button) && button != '') {
+		if (!isNaN(button) && button != '' || ['⁺⁄₋', '.'].includes(button)) {
 			// console.log(`${button} is a number`);
-			return 'number';
-		} else if (
-			['%', 'CE', 'C', '←', '⅟x', '𝑥²', '√𝑥', '÷', '×', '–', '+'].includes(
-				button
-			)
-		) {
-			// console.log(`${button} is an operation`);
-			return 'operations';
+			return 'numbers';
 		} else if (button === '=') {
 			// console.log(`${button} is equals`);
 			return 'equals';
