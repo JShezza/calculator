@@ -1,0 +1,56 @@
+#root {
+	--background: #121212;
+	--background-light: #1d1d1d;
+	--primary: #bb86fc;
+
+	color: var(--primary);
+}
+
+.wrapper {
+	width: 340px;
+	height: 540px;
+	padding: 10px;
+	background-color: var(--background);
+	border-radius: 10px;
+}
+
+.screen {
+	width: 100%;
+	height: 80px;
+	background-color: var(--background-light);
+	border: 1px solid var(--primary);
+	border-radius: 10px;
+	margin-bottom: 5px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	color: var(--primary);
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+.buttonBox {
+	width: 100%;
+	height: calc(100% - 100px);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-gap: 5px;
+}
+
+button {
+	border-radius: 10px;
+	border: 1px solid transparent;
+	padding: 0.6em 1.2em;
+	font-size: 1em;
+	font-weight: 500;
+	font-family: inherit;
+	background-color: var(--background-light);
+	color: var(--primary);
+	cursor: pointer;
+	transition: border-color 0.25s;
+}
+
+button:hover {
+	border-color: var(--primary);
+}
