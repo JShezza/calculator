@@ -9,7 +9,7 @@
 
 .wrapper {
 	width: 340px;
-	height: 540px;
+	height: 450px;
 	padding: 10px;
 	background-color: var(--background);
 	border-radius: 10px;
@@ -26,13 +26,16 @@
 	justify-content: flex-end;
 	align-items: center;
 	color: var(--primary);
+	font-size: 2.5rem;
 	font-weight: bold;
 	box-sizing: border-box;
+	padding: 0 10px;
+	overflow: hidden;
 }
 
 .buttonBox {
 	width: 100%;
-	height: calc(100% - 100px);
+	height: calc(100% - 85px);
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(6, 1fr);
@@ -42,7 +45,6 @@
 button {
 	border-radius: 10px;
 	border: 1px solid transparent;
-	padding: 0.6em 1.2em;
 	font-size: 1em;
 	font-weight: 500;
 	font-family: inherit;
